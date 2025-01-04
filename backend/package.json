@@ -4,12 +4,13 @@
   "version": "1.1.0",
   "description": "A backend server for Fusion Electronics - a MERN stack e-commerce website",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon --exec 'cd seed && node productSeeds.js dev && cd .. && node index.js'",
-    "build": "cd seed && node productSeeds.js dev && cd .. && node index.js",
-    "test": "cd seed && node productSeeds.js dev && cd .. && node index.js",
-    "dev": "nodemon --exec 'cd seed && node productSeeds.js dev && cd .. && node index.js'"
-  },
+"scripts": {
+  "start": "cd seed && node productSeeds.js dev && cd .. && node index.js",
+  "build": "node seed/productSeeds.js dev && node index.js",
+  "test": "node seed/productSeeds.js dev && node index.js",
+  "dev": "nodemon --exec \"node seed/productSeeds.js dev && node index.js\""
+}
+,
   "keywords": [
     "backend",
     "server",
