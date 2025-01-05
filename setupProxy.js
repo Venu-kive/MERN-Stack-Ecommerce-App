@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'https://mern-stack-ecommerce-app-backend.onrender.com',
+      target: 'https://mern-stack-ecommerce-app-xe26.onrender.com',
       changeOrigin: true,
     })
   );
